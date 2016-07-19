@@ -1,0 +1,22 @@
+<div class="addW">
+		<a class="add" href="#/add" ng-click="add()">增加</a>
+</div>
+<dl ng-repeat="car in infos" cid="{{car.id}}">
+
+<!-- <input type="hidden" id="carId" name="" value = "{{car.id}}"> -->
+	<dt>
+		<img src="{{car.img}}"></dt>
+
+	<dd class="pram">车名：{{car.carName}}</dd>
+	<dd class="pram">型号：{{car.carType}}</dd>
+	<dd class="pram">价格：{{car.price}}</dd>
+	<dd>
+		<a class="edit" href="#/view/{{car.id}}" ng-click="edit()">编辑</a>
+	</dd>
+
+	
+	<dd>
+		<a class="delete" href="javascript:;" ng-click="delete(car.id)">删除</a>
+	</dd>
+
+</dl>

@@ -1,0 +1,12 @@
+<html>
+ <head>
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>        
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+    $.getJSON( "priorities.json" , function( result ){
+        alert(result.start.count);
+    });
+});
+</script></head>
+</html>

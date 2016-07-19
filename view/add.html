@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增页面</title>
+</head>
+<body>
+    <h2 class="title">新增页面</h2>
+    <form class="edit">
+        <input  class="carTest" id="carId" nameF="id" type="hidden" ng-model="car.id">
+        <div class="form-control">
+            <label>车名:</label>
+            <input class="carTest" type="text" name="carName" ng-model="car.carName" ng-bind='carName'>
+            <!-- {{car.carName}} --> </div>
+        <div class="form-control">
+            <label>型号:</label>
+            <input class="carTest" type="text" name="carType" ng-model="car.carType"></div>
+        <div class="form-control">
+            <label>价格:</label>
+            <input class="carTest" type="text" name="price" ng-model="car.price"></div>
+        <div class="form-control"> 
+            <label>图片地址:</label>
+            <input class="carTest" type="text" name="img" disabled=""  value="images/01.jpg"></div>
+
+        <div class="editBtn">
+            <a class="cancel" href="#/">取消</a>
+            <a class="confirm" href="javascript:;" ng-click="add($event)">确认添加</a>
+        </div>
+
+    </form>
+</body>
+</html>

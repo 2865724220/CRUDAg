@@ -1,0 +1,130 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html{
+	font-size:62.6%;
+	font-family: "Microsoft Yahei",sans-serif;
+	line-height: 1;
+}
+a{
+	text-decoration: none;
+	color:grey;
+}
+ul,li{
+	list-style: none;
+}
+dl,dd,dt{
+
+}
+input,button{
+	outline: none;
+}
+input:focus{
+	outline: none;
+}
+body{
+	font-size:14px;
+}
+h2.title{
+	text-align: center;
+	margin:20px auto;
+}
+.info dl{
+	display: table;
+	margin: 24px auto;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #E21F36
+}
+.info dl img{
+	display:block;
+	/*width:180px;*/
+	height:112px;
+}
+.info dl>dt, .info dl>dd{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: left;
+}
+.info dd{
+	padding:0 10px;
+	font-size:16px;
+}
+.info a{
+	display:inline-block;
+	padding:8px 16px;
+	color:white;
+}
+
+.info a.edit{
+	background: rgb(86, 189, 231);
+}
+.info a.edit:hover{
+	background: rgb(69, 171, 213);
+}
+.info a.add {
+	background: rgb(32, 184, 32);
+	float:right;
+}
+.addW {
+padding-right: 60px;
+}
+.addW:after{
+	display:block;
+	content: '';
+	clear: both;
+}
+.info a.add:hover{
+	background: rgb(4, 137, 4);
+}
+.info a.delete{
+	background:rgb(247, 13, 13);
+}
+.info a.delete:hover{
+background: rgb(229, 13, 13);
+}
+.info a.cancel{
+	background: blue;
+}
+.info a.confirm{
+	background: red;
+}
+.pram{
+	width:160px;
+}
+
+.edit {
+display: table;
+margin: 0 auto;
+}
+.form-control{
+	margin:10px 0;
+}
+.form-control label{
+	display:inline-block;
+	vertical-align: middle;
+	width:80px;
+	padding-right:10px;
+	text-align: right;
+}
+.form-control input{
+	height:36px;
+	width:200px;
+	display:inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+	border:1px solid #ccc;
+	padding-left:10px;
+}
+.form-control input:focus{
+	border-color:blue;
+}
+.editBtn {
+text-align: center;
+margin: 20px 0;
+}
+.editBtn a.cancel{
+  margin-right:20px;
+}
